@@ -71,5 +71,5 @@ Gemfile.lock
 package-lock.json
 yarn.lock
 .idea
-
+vendor
 .bundle
