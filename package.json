@@ -3,7 +3,7 @@
   "scripts": {
     "setup": "bin/setup",
     "serve": "bundle exec jekyll serve --drafts",
-    "publish": "bin/deploy"
+    "deploy": "bin/deploy"
   },
   "dependencies": {
     "jquery": "^3.2.1",
@@ -12,5 +12,6 @@
     "svgxuse": "^1.2.4",
     "webfontloader": "^1.6.28",
     "zooming": "^2.0.0"
-  }
+  },
+  "version": "0.0.1"
 }
