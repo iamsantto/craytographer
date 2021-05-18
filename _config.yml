@@ -1,1 +1,72 @@
-theme: jekyll-theme-minimal
+blog_theme: light
+name: craytographer
+url: https://craytographer.com
+
+ga_analytics: G-XM2F2E9CE9
+rss_enabled: true
+scrollappear_enabled: true
+tag_nav_enabled: false
+theme_toggle: true
+social:
+  github: iamsantto
+  linkedin: iamsantto
+  twitter: craytographer
+  instagram: craytographer
+
+assets:
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
+  sources:
+    - _assets/icons
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/yarn
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor/
+  - yarn.lock
+plugins:
+  - jekyll-assets
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jemoji
+permalink: posts/:slug
+
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: 'index'

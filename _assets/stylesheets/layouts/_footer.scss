@@ -1,0 +1,32 @@
+// =============================================================================
+// Footer
+// =============================================================================
+
+.footer {
+  display: block;
+  padding-top: 35px;
+  margin-bottom: 85px;
+  border-top: 1px solid $base-border-color;
+  p {
+    font-size: 15px;
+    color: $gray-light;
+  }
+
+  .left-column {
+    display: inline-block;
+    color: $gray-light;
+    padding-bottom: 20px;
+  }
+
+  .right-column {
+    float: right;
+  }
+}
+
+@include breakpoint(extra-small) {
+  .footer .left-column, .right-column {
+    display: block;
+    float: none !important;
+    text-align: center;
+  }
+}
