@@ -39,12 +39,16 @@
     height: 16px;
     vertical-align: middle;
     margin: -2px 8px 0 8px;
-    fill: $gray;
+    fill: $black;
   }
 }
 
 .footer-link {
   text-decoration: underline;
+}
+
+.close-button {
+  color: $black;
 }
 
 .close-button, .footer-link {
