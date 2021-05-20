@@ -9,6 +9,7 @@
 {% endif %}
 
 {% asset vendor.js %}
+{% asset hireForm.js %}
 
 {% unless site.local_fonts %}
   {% asset webfonts.js %}
@@ -23,3 +24,7 @@
 {% if site.theme_toggle == true %}
   {% asset themetoggle.js %}
 {% endif %}
+
+<script src="https://unpkg.com/tripetto-runner-foundation"></script>
+<script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+<script src="https://unpkg.com/tripetto-services"></script>

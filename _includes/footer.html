@@ -1,9 +1,13 @@
 <footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <p class="left-column">
-    <a href="*">Looking for a photographer?</a>
-  </p>
+  <div class="left-column">
+    <span onclick="showHireForm()" class="footer-link">Hire A Photographer</span>
+    <div id="form-box">
+      <div class="close-button" onclick="hideHireForm()">{% include svg-icon.html icon="arrow-left" %} Back</div>
+      <div id="hire-form"></div>
+    </div>
+  </div>
   <p class="right-column">
     &copy; 2021 Santhosh Thirumavalavan<br />
-    Built in Bangalore, India.
+    Built in Bangalore, India
   </p>
 </footer>
