@@ -3,23 +3,29 @@
 // =============================================================================
 
 .footer {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 35px;
   margin-bottom: 85px;
+  text-align: center;
   border-top: 1px solid $base-border-color;
   p {
     font-size: 15px;
     color: $gray-light;
   }
 
-  .left-column {
-    display: inline-block;
-    color: $gray-light;
+  .left-foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $footer-primary-shade;
     padding-bottom: 20px;
   }
 
-  .right-column {
-    float: right;
+  .right-foo {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -45,6 +51,25 @@
 
 .footer-link {
   text-decoration: underline;
+  color: $gray-light;
+}
+
+.bmc-btn-container {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.bmc-btn {
+  min-width: 0px !important;
+  height: 30px !important;
+  font-size: 0.8em !important;
+  padding: 10px !important;
+  svg {
+    max-height: 21px !important;
+  }
 }
 
 .close-button {
@@ -60,9 +85,7 @@
 }
 
 @include breakpoint(extra-small) {
-  .footer .left-column, .right-column {
-    display: block;
-    float: none !important;
-    text-align: center;
+  .footer {
+    flex-direction: column;
   }
 }

@@ -3,7 +3,9 @@
 // =============================================================================
 
 .header-nav {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 40px 0 20px;
   border-bottom: 1px solid $base-border-color;
 }
@@ -17,10 +19,12 @@
   text-decoration: none;
 }
 
+.theme-toggle {
+  margin: 21px 0 0;
+}
+
 .header-links {
-  float: right;
   padding: 0;
-  margin: 15px 0 0;
   list-style: none;
   li {
     display: inline-block;
@@ -64,6 +68,7 @@
 @include breakpoint(extra-small) {
   .header-nav {
     text-align: center;
+    flex-direction: column;
   }
   .header-links {
     display: block;
