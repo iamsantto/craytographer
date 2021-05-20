@@ -17,9 +17,11 @@ function showHireForm() {
   });
 
   formBox.style.display = "block"
+  ga('send', 'event', 'footer-link', 'open', 'hire_form');
 }
 
 function hideHireForm() {
   var formBox = document.getElementById("form-box");
   formBox.style.display = "none"
+  ga('send', 'event', 'hire-form-back-btn', 'close', 'hire_form');
 }
