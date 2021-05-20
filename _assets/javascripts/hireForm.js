@@ -17,11 +17,17 @@ function showHireForm() {
   });
 
   formBox.style.display = "block"
-  ga('send', 'event', 'footer-link', 'open', 'hire_form');
+  gtag('event', 'open_hire_form', {
+    'event_category': 'section_view',
+    'event_label': 'view_hire_form'
+  });
 }
 
 function hideHireForm() {
   var formBox = document.getElementById("form-box");
   formBox.style.display = "none"
-  ga('send', 'event', 'hire-form-back-btn', 'close', 'hire_form');
+  gtag('event', 'close_hire_form', {
+    'event_category': 'section_view',
+    'event_label': 'close_hire_form'
+  });
 }
