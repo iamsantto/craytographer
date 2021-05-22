@@ -23,9 +23,20 @@
   margin: 21px 0 0;
 }
 
+.highlight-btn {
+  background: none;
+  border: 1px solid $brand-success;
+  border-radius: 15px;
+  color: $brand-success;
+  cursor: pointer;
+}
+
 .header-links {
   padding: 0;
   list-style: none;
+  ul {
+    display: inline-block;
+  }
   li {
     display: inline-block;
     margin-left: 20px;
@@ -73,13 +84,16 @@
   .header-links {
     display: block;
     float: none;
-    text-align: center;
     li {
       margin: 0 10px;
       &:last-child {
         margin-right: 0;
       }
     }
+  }
+  .theme-toggle {
+    text-align: center;
+    margin-top: auto;
   }
   .header-tags {
     margin: 20px 0 0;

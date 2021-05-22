@@ -1,9 +1,11 @@
 <footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
   <div class="left-foo">
-    <span onclick="showHireForm()" class="footer-link">Hire a Photographer.</span>
-    <div id="form-box">
-      <div class="close-button" onclick="hideHireForm()">{% include svg-icon.html icon="arrow-left" %} Back</div>
-      <div id="hire-form"></div>
+    <span>Podcast <i>(Coming soon)</i></span>
+    <span>Photography <i>(Work in progress)</i></span>
+    <span onclick="showForm('hire')" class="footer-link">Hire a Photographer.</span>
+    <div id="hire-box">
+      <div class="close-button" onclick="hideForm('hire')">{% include svg-icon.html icon="arrow-left" %} Back</div>
+      <div id="hire-frame"></div>
     </div>
   </div>
   <div class="right-foo">
