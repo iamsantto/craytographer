@@ -8,11 +8,11 @@
   justify-content: space-between;
   padding-top: 35px;
   margin-bottom: 85px;
-  text-align: center;
+  text-align: left;
   border-top: 1px solid $base-border-color;
   p {
     font-size: 15px;
-    color: $gray-light;
+    color: $gray;
   }
 
   .left-foo {
@@ -21,6 +21,10 @@
     justify-content: center;
     color: $footer-primary-shade;
     padding-bottom: 20px;
+    i {
+      opacity: 0.7;
+      font-size: 0.8em;
+    }
   }
 
   .right-foo {
@@ -29,35 +33,14 @@
   }
 }
 
-#form-box {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10vh 10vw;
-  background-color: #eaf7f9;
-  height: 100%;
-  z-index: 99;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin: -2px 8px 0 8px;
-    fill: $black;
-  }
-}
-
 .footer-link {
   text-decoration: underline;
-  color: $gray-light;
+  color: $gray;
 }
 
 .bmc-btn-container {
   display: flex !important;
   flex-direction: row !important;
-  justify-content: center !important;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -80,12 +63,11 @@
   cursor: pointer;
 }
 
-#hire-form {
-  margin: 20vh 10vw;
-}
-
 @include breakpoint(extra-small) {
   .footer {
     flex-direction: column;
+    .right-foo {
+      margin-top: 25px;
+    }
   }
 }

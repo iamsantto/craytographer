@@ -159,3 +159,29 @@ img {
   color: $white;
   background-color: $gray-darkest;
 }
+
+#sub-box, #hire-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10vh 10vw;
+  background-color: #eaf7f9;
+  height: 100%;
+  text-align: center;
+  z-index: 99;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: -2px 8px 0 8px;
+    fill: $black;
+  }
+}
+
+
+#sub-frame, #hire-frame {
+  margin: 10vh 10vw;
+}
