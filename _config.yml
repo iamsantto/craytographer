@@ -48,7 +48,6 @@ exclude:
 plugins:
   - jekyll-assets
   - jekyll-paginate-v2
-  - jekyll-sitemap
   - jemoji
 permalink: posts/:slug
 

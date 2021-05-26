@@ -17,7 +17,7 @@ $gray-lighter: lighten($gray-darkest, 75);
 $gray-lightest: lighten($gray-darkest, 85);
 $white: #fff;
 
-$brand-success: #38e6dd;
+$brand-success: #02d9fd;
 
 // Font colors
 
@@ -34,8 +34,8 @@ $base-border-color: $gray-darker;
 $body-background: $gray-darkest;
 $header-logo-color: $white;
 $footer-primary-shade: $gray-lighter;
-$header-link-color: $gray-light;
-$header-link-color-hover: $white;
+$nav-link-color: $gray-light;
+$nav-link-color-hover: $white;
 $article-header-title-color: $gray-lightest;
 $article-header-description-color: $gray;
 $article-post-titles-color: $gray-lightest;
