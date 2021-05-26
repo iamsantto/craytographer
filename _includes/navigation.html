@@ -5,8 +5,10 @@
   <div class="header-links theme-toggle">
   <button onclick="showForm('sub')" class="highlight-btn">Subscribe</button>
   <div id="sub-box">
-      <div class="close-button" onclick="hideForm('sub')">{% include svg-icon.html icon="arrow-left" %} Back</div>
-      <div id="sub-frame"></div>
+    <div class="close-button" onclick="hideForm('sub')">{% include svg-icon.html icon="arrow-left" %} Back</div>
+    <div id="sub-frame">
+      <span class="loader">{% include svg-icon.html icon="loader" %}</span>
+    </div>
   </div>
   <ul>
   {% if site.theme_toggle == true %}
