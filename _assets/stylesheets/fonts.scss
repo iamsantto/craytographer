@@ -1,11 +1,4 @@
-// =============================================================================
-// Fonts
-// =============================================================================
-
 @charset "UTF-8";
-
-// Cormorant Garamond
-// =============================================================================
 
 @font-face {
   font-family: 'Cormorant Garamond';
@@ -19,10 +12,8 @@
     asset_url('cormorant-garamond/Cormorant-Garamond-700.woff2') format('woff2'),
     asset_url('cormorant-garamond/Cormorant-Garamond-700.woff') format('woff'),
     asset_url('cormorant-garamond/Cormorant-Garamond-700.ttf') format('truetype');
+  font-display: swap;
 }
-
-// Lato
-// =============================================================================
 
 @font-face {
   font-family: 'Lato';
@@ -36,6 +27,7 @@
     asset_url('lato/Lato-300.woff2') format('woff2'),
     asset_url('lato/Lato-300.woff') format('woff'),
     asset_url('lato/Lato-300.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -50,6 +42,7 @@
     asset_url('lato/Lato-regular.woff2') format('woff2'),
     asset_url('lato/Lato-regular.woff') format('woff'),
     asset_url('lato/Lato-regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -64,4 +57,5 @@
     asset_url('lato/Lato-700.woff2') format('woff2'),
     asset_url('lato/Lato-700.woff') format('woff'),
     asset_url('lato/Lato-700.ttf') format('truetype');
+  font-display: swap;
 }
