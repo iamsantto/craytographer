@@ -1,11 +1,13 @@
 <footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
   <div class="left-foo">
     <span>Podcast <i>(Coming soon)</i></span>
-    <span>Photography <i>(Work in progress)</i></span>
+    <span>Photography <i>(Coming soon)</i></span>
     <span onclick="showForm('hire')" class="footer-link">Hire a Photographer.</span>
     <div id="hire-box">
       <div class="close-button" onclick="hideForm('hire')">{% include svg-icon.html icon="arrow-left" %} Back</div>
-      <div id="hire-frame"></div>
+      <div id="hire-frame">
+        <span class="loader">{% include svg-icon.html icon="loader" %}</span>
+      </div>
     </div>
   </div>
   <div class="right-foo">
