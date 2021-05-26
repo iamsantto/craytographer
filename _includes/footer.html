@@ -3,19 +3,13 @@
     <span>Podcast <i>(Coming soon)</i></span>
     <span>Photography <i>(Coming soon)</i></span>
     <span onclick="showForm('hire')" class="footer-link">Hire a Photographer.</span>
-    <div id="hire-box">
-      <div class="close-button" onclick="hideForm('hire')">{% include svg-icon.html icon="arrow-left" %} Back</div>
-      <div id="hire-frame">
-        <span class="loader">{% include svg-icon.html icon="loader" %}</span>
-      </div>
-    </div>
   </div>
   <div class="right-foo">
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-  data-name="bmc-button" data-slug="craytographer" data-color="#FFDD00" data-emoji=""
-  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000"
-  data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-    <ul class="header-links">
+      data-name="bmc-button" data-slug="craytographer" data-color="#FFDD00" data-emoji=""
+      data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000"
+      data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    <ul class="nav-links">
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" rel="noreferrer noopener" target="_blank" title="Twitter">
@@ -136,7 +130,7 @@
       </li>
     {% endif %}
     </ul>
-    <p class="">
+    <p>
       &copy; 2021 Santhosh Thirumavalavan<br />
       Built in Bangalore, India
     </p>

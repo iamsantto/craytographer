@@ -92,6 +92,19 @@ h6 {
   }
 }
 
+@include breakpoint(extra-small) {
+  .nav-links {
+    display: block;
+    float: none;
+    li {
+      margin: 0 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 a {
   color: $base-accent-color;
   text-decoration: underline;
@@ -201,4 +214,33 @@ img {
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
+}
+
+.nav-links {
+  padding: 0;
+  list-style: none;
+  ul {
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      font-size: 18px;
+      color: $nav-link-color;
+      cursor: pointer;
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $nav-link-color;
+      }
+      &:hover svg {
+      fill: $nav-link-color-hover;
+      }
+    }
+  }
 }
