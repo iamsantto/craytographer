@@ -4,15 +4,32 @@
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  padding-top: 35px;
   margin-bottom: 85px;
   text-align: left;
   border-top: 1px solid $base-border-color;
   p {
     font-size: 15px;
     color: $gray;
+  }
+
+  .upper-foo, .lower-foo {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-upper-foo {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .right-upper-foo {
+    min-width: 250px;
+    min-height: 150px;
+    border: 1px solid $base-border-color;
   }
 
   .left-foo {
@@ -65,7 +82,9 @@
 
 @include breakpoint(extra-small) {
   .footer {
-    flex-direction: column;
+    .lower-foo, .upper-foo {
+      flex-direction: column;
+    }
     .right-foo {
       margin-top: 25px;
     }
