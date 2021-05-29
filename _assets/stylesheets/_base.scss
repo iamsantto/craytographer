@@ -244,3 +244,14 @@ img {
     }
   }
 }
+
+.coming-soon {
+  padding: 100px;
+  font-style: italic;
+  font-family: monospace;
+  font-size: small;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
