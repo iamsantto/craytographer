@@ -174,49 +174,6 @@ img {
   background-color: $gray-darkest;
 }
 
-#sub-box, #hire-box {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10vh 10vw;
-  background-color: #eaf7f9;
-  height: 100%;
-  text-align: center;
-  z-index: 99;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin: -2px 8px 0 8px;
-    fill: $black;
-  }
-}
-
-
-#sub-frame, #hire-frame {
-  margin: 10vh 10vw;
-}
-
-.loader {
-  svg {
-    animation: spin 2s linear infinite;
-    -webkit-animation: spin 2s linear infinite;
-  }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
 .nav-links {
   padding: 0;
   list-style: none;
