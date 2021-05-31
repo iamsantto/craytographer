@@ -1,7 +1,3 @@
-// =============================================================================
-// Footer
-// =============================================================================
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -19,6 +15,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .middle-foo {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    justify-content: space-evenly;
+    border: 1px solid $base-border-color;
+    z-index: 99;
+
+    input {
+      color: $nav-link-color;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $base-border-color;
+    }
+
+    input[type=email]:focus {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $nav-link-color;
+    }
   }
 
   .left-upper-foo {
@@ -82,11 +101,11 @@
 
 @include breakpoint(extra-small) {
   .footer {
-    .lower-foo, .upper-foo {
+    .lower-foo, .upper-foo, .middle-foo {
       flex-direction: column;
     }
-    .right-foo {
-      margin-top: 25px;
+    .right-foo, .foo-btn {
+      margin-top: 15px;
     }
   }
 }

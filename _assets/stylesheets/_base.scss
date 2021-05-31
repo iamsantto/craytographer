@@ -13,6 +13,7 @@
 
 html {
   font-size: $base-font-size;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -254,4 +255,15 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#out-of-focus {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 98;
+  background: $body-background;
+  transition: opacity 1s ease-in, visibility 2s;
 }
