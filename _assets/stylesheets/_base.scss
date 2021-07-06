@@ -175,6 +175,7 @@ img {
 }
 
 .nav-links {
+  margin: 10px 0;
   padding: 0;
   list-style: none;
   ul {
@@ -192,8 +193,8 @@ img {
       color: $nav-link-color;
       cursor: pointer;
       svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         fill: $nav-link-color;
       }
       &:hover svg {
@@ -207,7 +208,6 @@ img {
   padding: 100px;
   font-style: italic;
   font-family: monospace;
-  font-size: small;
   text-align: center;
   display: flex;
   align-items: center;

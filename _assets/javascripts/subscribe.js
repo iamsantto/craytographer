@@ -5,7 +5,6 @@ function setAnalyticsEvent (event) {
   });
 }
 
-
 function goToSubscribeForm () {
   var formEl = document.getElementById('subscribe-form');
   var blurEl = document.getElementById('out-of-focus');

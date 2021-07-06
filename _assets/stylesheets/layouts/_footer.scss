@@ -18,15 +18,16 @@
   }
 
   .middle-foo {
-    margin-top: 35px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
     padding: 35px;
-    justify-content: space-evenly;
     border: 1px solid $base-border-color;
     z-index: 99;
 
     input {
+      max-width: 35vw;
+      outline: none;
       color: $nav-link-color;
       background: none;
       border: none;
@@ -38,17 +39,22 @@
       border: none;
       border-bottom: 1px solid $nav-link-color;
     }
+
+    fieldset {
+      border: none;
+    }
   }
 
   .left-upper-foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 15px;
     text-align: left;
-  }
 
-  .right-upper-foo {
-    min-width: 250px;
-    min-height: 150px;
-    border: 1px solid $base-border-color;
+    h3 {
+      padding-bottom: 20px;
+    }
   }
 
   .left-foo {
@@ -67,6 +73,10 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+#notification-sub {
+  visibility: hidden;
 }
 
 .footer-link {
@@ -99,13 +109,36 @@
   cursor: pointer;
 }
 
+#sub-fieldset {
+  display: flex;
+  flex-direction: row;
+}
+
+#sub-try-again {
+  cursor: pointer;
+}
+
 @include breakpoint(extra-small) {
   .footer {
-    .lower-foo, .upper-foo, .middle-foo {
+    .lower-foo, .upper-foo, #sub-fieldset {
       flex-direction: column;
+      text-align: center;
     }
-    .right-foo, .foo-btn {
+    .right-foo {
       margin-top: 15px;
+    }
+    #sub-fieldset {
+      input {
+        max-width: 50vw;
+      }
+    }
+    .foo-btn {
+      margin-top: 25px;
+      padding: 5px;
+    }
+    .bmc-btn-container {
+      justify-content: center;
+      margin-bottom: 20px;
     }
   }
 }
