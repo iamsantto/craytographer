@@ -2,7 +2,7 @@
   "name": "craytographer",
   "scripts": {
     "setup": "bin/setup",
-    "serve": "bundle exec jekyll serve --drafts",
+    "start": "bundle exec jekyll serve --drafts",
     "deploy": "bin/deploy"
   },
   "dependencies": {

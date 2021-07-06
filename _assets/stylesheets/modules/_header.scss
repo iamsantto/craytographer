@@ -19,18 +19,20 @@
 .nav-menu {
   display: flex;
   margin-top: 11px;
-  font-size: 14px;
+
   a {
     display: inline-flex;
     align-items: center;
     margin-left: 10px;
     cursor: pointer;
   }
+
   svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     fill: $nav-link-color;
   }
+
   &:hover svg {
     fill: $nav-link-color-hover;
   }
@@ -42,6 +44,8 @@
   border-radius: 15px;
   color: $brand-success;
   cursor: pointer;
+  margin: 0 20px;
+  font-size: medium;
 }
 
 @include breakpoint(extra-small) {

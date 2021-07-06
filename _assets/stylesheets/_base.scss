@@ -13,6 +13,7 @@
 
 html {
   font-size: $base-font-size;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -173,50 +174,8 @@ img {
   background-color: $gray-darkest;
 }
 
-#sub-box, #hire-box {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10vh 10vw;
-  background-color: #eaf7f9;
-  height: 100%;
-  text-align: center;
-  z-index: 99;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin: -2px 8px 0 8px;
-    fill: $black;
-  }
-}
-
-
-#sub-frame, #hire-frame {
-  margin: 10vh 10vw;
-}
-
-.loader {
-  svg {
-    animation: spin 2s linear infinite;
-    -webkit-animation: spin 2s linear infinite;
-  }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
 .nav-links {
+  margin: 10px 0;
   padding: 0;
   list-style: none;
   ul {
@@ -234,8 +193,8 @@ img {
       color: $nav-link-color;
       cursor: pointer;
       svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         fill: $nav-link-color;
       }
       &:hover svg {
@@ -249,9 +208,19 @@ img {
   padding: 100px;
   font-style: italic;
   font-family: monospace;
-  font-size: small;
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#out-of-focus {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 98;
+  background: $body-background;
+  transition: opacity 1s ease-in, visibility 2s;
 }
