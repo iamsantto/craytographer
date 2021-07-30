@@ -1,21 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 700;
-  src: asset_url('cormorant-garamond/Cormorant-Garamond-700.eot');
-  src:
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.eot?#iefix') format('embedded-opentype'),
-    local('Cormorant Garamond Medium'),
-    local('Cormorant-Garamond-600'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff2') format('woff2'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff') format('woff'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
