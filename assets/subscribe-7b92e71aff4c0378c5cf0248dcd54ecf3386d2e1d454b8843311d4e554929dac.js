@@ -22,3 +22,4 @@ function goToSubscribeForm () {
 
   setAnalyticsEvent('scroll_to_subscribe');
 }
+;
