@@ -202,24 +202,3 @@ img {
     }
   }
 }
-
-.coming-soon {
-  padding: 100px;
-  font-style: italic;
-  font-family: monospace;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-#out-of-focus {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 98;
-  background: $body-background;
-  transition: opacity 1s ease-in, visibility 2s;
-}
